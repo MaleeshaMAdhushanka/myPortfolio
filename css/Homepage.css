@@ -1,0 +1,79 @@
+.portfolio-section {
+    background-color: #020b11;
+    color: #f5f5f5;
+    font-family: Inter, sans-serif;
+    overflow: hidden;
+}
+.container{
+
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 44px 80px 150px;
+
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.nav-link{
+
+    font-weight: 700;
+    font-size: 24px;
+    color: #f5f5f5;
+    /* yatin udeline wage wedenawa meka nethanm */
+    text-decoration: none;
+}
+.nav-menu{
+    display: flex;
+    gap: 28px;
+
+
+}
+
+.logo{
+    width: 138px;
+    height: auto;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    
+}
+.hero-content{
+    width: 59%;
+
+}
+.hero-subtile{
+    font-size: 15px;
+
+}
+.hero-title{
+    font-size: 20px;
+    margin-top: 112px;
+
+}
+.hero-description{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 112px;
+}
+.hero-image{
+    width: 40%;
+    float: right;
+    margin-left: 22px;
+    /* padding-left: 50px; */
+    border-radius: 50%;
+    border: 10px solid #f5f5f5;
+    /* align-content: right; */
+    
+    /* background-position: top right ; */
+
+    
+
+}

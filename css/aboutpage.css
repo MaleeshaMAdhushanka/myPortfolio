@@ -1,0 +1,55 @@
+.about-section{
+    padding: 60px 0;
+}
+.about-sectiontitle{
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+
+}
+.section-divider{
+    width: 212px;
+    margin: 15px auto;
+    position: relative;
+}
+.divider-line{
+    height: 6px;
+    background-color: rgba(154, 150, 150, 0.65);
+
+}
+.divider-highlight{
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 70px;
+    height: 15px;
+    background-color: #0984e3;
+    border-radius: 50px;
+}
+
+.about-content{
+    display: flex;
+    gap: 20px;
+    margin-top: 28px;
+
+}
+
+.about-image{
+    width: 37%;
+    height: 30%;
+
+}
+
+.about-text{
+    width: 63%;
+}
+.about-heading{
+
+    font-size: 55px;
+    margin-top: 71px;
+}
+
+.about-desscription{
+    font-size: 20px;
+    margin-top: 66px;
+}
