@@ -53,3 +53,469 @@
     font-size: 20px;
     margin-top: 66px;
 }
+
+/* Mobile Small (up to 320px )*/
+@media screen and (max-width: 320px) {
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    .section-divider {
+      width: 50px;
+      margin: 10px auto;
+      position: relative;
+
+    }
+
+    .divider-line{
+        height: 17px;
+        width: 150px;
+        background-color:white;
+    
+    }
+    .divider-highlight{
+        /* position: absolute; */
+        top: -19px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+    
+
+
+    .about-sectiontitle{
+        font-size: 30px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .about-heading {
+
+        font-size: 20px;
+        margin-top: 200%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 50%;
+       position: absolute;
+       display: block;
+       top: 159%;
+       right: 20%;
+       transform: translate(-10%, -40%);
+    
+
+
+    }
+
+    .about-text{
+        width: 20%;
+    }
+
+    .about-desscription {
+        text-align: left;
+        font-size: 15px;
+
+    }
+
+
+
+
+}
+
+
+/* Mobile Medium (up to 375px) */
+
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 30px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        font-size: 20px;
+        margin-top: 200%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 50%;
+       position: absolute;
+       display: block;
+       top: 180%;
+       right: 20%;
+       transform: translate(-10%, -40%);
+    
+
+
+    }
+
+    .about-text{
+        width: 90%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+}
+
+
+/* Mobile Large (up to 425px) */
+
+@media screen and (min-width: 376px) and (max-width: 425px) { 
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 30px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        font-size: 25px;
+        margin-top: 200%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 50%;
+       height: 40%;
+       position: absolute;
+       display: block;
+       top: 180%;
+       right: 20%;
+       transform: translate(-10%, -40%);
+    
+
+
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+
+    }
+
+}
+
+
+/* Tab type divices */
+/* done */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 40px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        font-size: 28px;
+        margin-top: 100%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 50%;
+       height: 60%;
+       position: absolute;
+       display: block;
+       top: 150%;
+       right: 20%;
+       transform: translate(-10%, -40%);
+    
+
+
+    }
+
+    .about-text{
+        width: 100%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+
+}
+
+
+/* Laptop Type Devices */
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 50px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        font-size: 33px;
+        margin-top: 75%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 50%;
+       height: 70%;
+       position: absolute;
+       display: block;
+       top: 155%;
+       right: 20%;
+       transform: translate(-20%, -50%);
+    
+
+
+    }
+
+    .about-text{
+        width: 95%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+}
+
+
+/* Laptop Large */
+
+@media screen  and (min-width: 1025px) and (max-width: 1440px) {
+
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 60px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        font-size: 43px;
+        margin-top: 56%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 40%;
+       height: 80%;
+       position: absolute;
+       display: block;
+       top: 170%;
+       right: 20%;
+       transform: translate(-20%, -50%);
+    
+
+
+    }
+
+    .about-text{
+        width: 95%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 25px;
+        line-height: 40px;
+
+    }
+
+}
+
+
+
+/* 4k-2560 */
+
+@media screen  and (min-width: 1441px) and (max-width: 2560px) {
+
+
+    .about-section{
+        padding: 10px 0;
+    }
+
+    
+    
+    .about-sectiontitle{
+        font-size: 60px;
+       
+    
+    }
+
+    .about-content {
+        gap: 0px;
+        margin-top: 10px;
+        margin-right: 10%;
+
+    }
+
+
+    .about-heading {
+
+        /* font-size: 43px; */
+        margin-top: 70%;
+        text-align: center;
+       
+      
+        
+    }
+
+    .about-image {
+       width: 30%;
+       height: 90%;
+       position: absolute;
+       display: block;
+       top: 170%;
+       right: 20%;
+       transform: translate(-50%, -50%);
+    
+
+
+    }
+
+    .about-text{
+        width: 110%;
+    }
+
+    .about-desscription {
+        text-align: center;
+        font-size: 28px;
+        line-height: 40px;
+
+    }
+
+}
+
+
+
+
+

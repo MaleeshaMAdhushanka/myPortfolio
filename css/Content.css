@@ -1,0 +1,95 @@
+.story-section {
+    padding: 40px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 18px;
+}
+
+
+.story-section h2 {
+    text-align: center;
+    
+}
+
+
+#h2-text {
+    margin-right: 80px;
+    margin-bottom: 20px;
+    color: blue;
+}
+.section-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.story-divider {
+    width: 212px;
+    margin: 15px auto;
+    position: relative;
+   
+}
+
+.story-line {
+    height: 6px;
+    background-color: rgba(154, 150, 150, 0.65);
+    
+}
+
+.story-highlight {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 70px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50px;
+    
+}
+
+.time-line {
+    max-width: 800px;
+    margin: 0 auto auto 15rem;
+}
+
+.timeline-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 250px;
+    width: 70%;
+    gap: 50px;
+    column-gap: 10px;
+}
+
+.timeline-item:hover {
+    transform: translate(10px,-15px);
+}
+
+.timeline-title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.timeline-subtitle {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: 700;
+}
+
+/* Centering timeline items in rows */
+.timeline-row {
+    justify-content: center;
+    align-items: start;
+}
