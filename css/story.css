@@ -1,80 +1,707 @@
-.story-section{
-    padding: 60px 0;
-
-}
-.section-title{
-  font-size: 65px;
-  font-weight: 700;
-  text-align: center;
+.story-section {
+    padding: 40px;
+    background-color: yellow;
+    text-align: center;
+    border-radius: 18px;
 }
 
-.story-divider{
-     width: 221px;
-     margin: 15px auto;
-     position: relative;
 
+.story-section h2 {
+    text-align: center;
+    
 }
-.story-line{
+
+
+#h2-text {
+    margin-right: 80px;
+    margin-bottom: 20px;
+    color: blue;
+}
+.section-title {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.story-divider {
+    width: 221px;
+    margin: 15px auto;
+    position: relative;
+   
+}
+
+.story-line {
     height: 6px;
     background-color: rgba(154, 150, 150, 0.65);
-
+    
 }
-.story-highlight{
+
+.story-highlight {
     position: absolute;
     top: -4px;
     left: 0;
-    width: 70px;
+    width: 50px;
     height: 15px;
     background-color: #0984e3;
     border-radius: 50px;
-
+   
 }
-.time-line{
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 75px; */
-    
+
+.time-line {
+    max-width: 800px;
+    margin: 0 auto auto 15rem;
+}
+
+.timeline-row {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    justify-content: center;
-
-    margin-top: 0; /* Reduce this to adjust space above the timeline */
-  
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    padding: 20px 0;
 }
 
-.time-line > h2{
-    font-size: 200%; 
-    font-weight: 700;
+.timeline-item {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    min-height: 250px;
+    width: 70%;
+    gap: 50px;
+    column-gap: 10px;
+}
+
+.timeline-item:hover {
+    transform: translate(10px,-15px);
+}
+
+.timeline-title {
+    font-size: 30px;
+    color: black;
     margin-bottom: 10px;
-    
 }
 
-.timelie-row{
-    width: 100%; /* Adjust to fit within the container */
-    margin-top: 0; /* Reduce gap between the heading and timeline */
-    padding-top: 0; 
-}
-
-.timeline-item{
-    background-color: #282e33;
-    border-radius: 25px;
-    padding: 10%;
-    width: 100%;
-    margin-bottom: 10px;
-    margin-right: 30px;
-
-}
-
-.timeline-title{
+.timeline-subtitle {
     font-size: 20px;
+    color: #007bff;
     font-weight: 700;
+}
+
+/* Centering timeline items in rows */
+.timeline-row {
+    justify-content: center;
+    align-items: start;
+}
+
+     /* Mobile Small (up to 320px ) */
+@media screen and (max-width: 320px) {
+
+    .story-section {
+        position: relative;
+        right: 30%;
+        margin-top: 60%;
+        padding: 10px;
+        width: 160%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 12px;
+        width: 150px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 80px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 50px; /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 0 auto 10px; /* Centered and reduce margin */
+        color: rgb(2, 2, 1);
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .time-line {
+        max-width: 280px; /* Ensure it fits well on small screens */
+        margin: 0 auto;
+        padding: 0; /* Remove left padding */
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; /* Ensure items stack vertically */
+        gap: 20px; /* Reduce spacing between items */
+    }
+
+    .timeline-item {
+        width: 90%; /* Take full width on small screens */
+        padding: 10px; /* Reduce padding */
+        margin: 10px auto; /* Center the items */
+        min-height: auto; /* Allow items to shrink if needed */
+    }
+
+    .timeline-title {
+        font-size: 18px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 14px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+
+
+/* Mobile Medium (up to 375px) */
+
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+    .story-section {
+        position: relative;
+        right: 30%;
+        margin-top: 60%;
+        padding: 10px;
+        width: 150%;
+       
+    }
+
+    .story-divider {
+        width: 140px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 12px;
+        width: 160px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 80px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 50px; /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 16px auto 10px; /* Centered and reduce margin */
+        color: rgb(2, 2, 1);
+        font-size: 25px; /* Reduce font size */
+    }
+
+    .time-line {
+        max-width: 280px; /* Ensure it fits well on small screens */
+        margin: 0 auto;
+        padding: 0; /* Remove left padding */
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; /* Ensure items stack vertically */
+        gap: 20px; /* Reduce spacing between items */
+    }
+
+    .timeline-item {
+        width: 90%; /* Take full width on small screens */
+        padding: 10px; /* Reduce padding */
+        margin: 10px auto; /* Center the items */
+        min-height: auto; /* Allow items to shrink if needed */
+    }
+
+    .timeline-title {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 15px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
+}
+
+
+
+/* Mobile Large (up to 425px) */
+
+@media screen and (min-width: 376px) and (max-width: 425px) { 
+
+
+    .story-section {
+        position: relative;
+        right: 30%;
+        margin-top: 60%;
+        padding: 10px;
+        width: 150%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 12px;
+        width: 150px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 80px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 60px;
+      /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 32px auto 10px; 
+        color: rgb(2, 2, 1);
+        font-size: 25px;
+    }
+
+    .time-line {
+        max-width: 280px; 
+        margin: 0 auto;
+        padding: 0; 
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    .timeline-item {
+        width: 100%; 
+        padding: 10px; 
+        margin: 10px auto;
+        min-height: auto; 
+    }
+
+    .timeline-title {
+        font-size: 20px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 15px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
+}
+
+
+
+
+/* Tab type divices */
+/* done */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .story-section {
+        position: relative;
+        right: 1%;
+        left: 2%;
+        margin-top: 50%;
+        padding: 10px;
+        width: 90%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 12px;
+        width: 180px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 100px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 60px;
+      /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 32px auto 10px; 
+        color: rgb(2, 2, 1);
+        font-size: 30px;
+    }
+
+    .time-line {
+        max-width: 280px; 
+        margin: 0 auto;
+        padding: 0; 
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .timeline-item {
+        width: 100%; 
+        padding: 10px; 
+        margin: 10px auto;
+        min-height: auto; 
+    }
+
+    .timeline-title {
+        font-size: 21px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 18px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
 
 }
 
-.timeline-subtitle{
 
-    font-size: 16px;
-    margin-top: 10px;
+
+
+/* Laptop Type Devices */
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+
+    .story-section {
+        position: relative;
+        right: 1%;
+        left: 2%;
+        margin-top: 50%;
+        padding: 10px;
+        width: 100%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 13px;
+        width: 190px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 100px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 24px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 60px;
+      /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 32px auto 10px; 
+        color: rgb(2, 2, 1);
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .time-line {
+        max-width: 340px; 
+        margin: 0 auto;
+        padding: 0; 
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .timeline-item {
+        width: 110%; 
+        padding: 10px; 
+        margin: 10px auto;
+        min-height: auto; 
+    }
+
+    .timeline-title {
+        font-size: 23px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 20px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
+
+}
+
+
+
+
+/* Laptop Large */
+
+@media screen  and (min-width: 1025px) and (max-width: 1440px) {
+
+    .story-section {
+        position: relative;
+        right: 3%;
+        left: 1%;
+        margin-top: 50%;
+        margin-left: -3%;
+        padding: 10px;
+        width: 100%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 13px;
+        width: 190px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 100px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 28px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 62px;
+      /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 32px auto 10px; 
+        color: rgb(2, 2, 1);
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .time-line {
+        max-width: 500px; 
+        margin: 0 auto;
+        padding: 0; 
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+    }
+
+    .timeline-item {
+        width: 120%; 
+        height: 90%;
+        padding: 10px; 
+        margin: 10px auto;
+        min-height: auto; 
+    }
+
+    .timeline-title {
+        font-size: 23px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 20px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
+
+}
+
+
+
+
+/* 4k-2560 */
+
+@media screen  and (min-width: 1441px) and (max-width: 2560px) {
+
+    .story-section {
+        position: relative;
+        right: 3%;
+        left: 6%;
+        margin-top: 20%;
+       
+        padding: 10px;
+        width: 80%;
+       
+    }
+
+    .story-divider {
+        width: 132px;
+        margin: 5px auto;
+        position: relative;
+    }
+
+    .story-line {
+        height: 13px;
+        width: 190px;
+        background-color: white;
+    }
+
+    .story-highlight {
+        top: -5px;
+        left: 0;
+        width: 100px;
+        height: 18px;
+        background-color: #0984e3;
+        border-radius: 50px;
+    }
+
+    .section-title {
+        font-size: 28px; /* Reduce font size */
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1px;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        color: blue;
+        font-size: 62px;
+      /* Reduce font size */
+    }
+
+    #h2-text {
+        margin: 32px auto 10px; 
+        color: rgb(2, 2, 1);
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .time-line {
+        max-width: 500px; 
+        margin: 0 auto;
+        padding: 0; 
+    }
+
+    .timeline-row {
+        grid-template-columns: 1fr; 
+        gap: 21px; 
+    }
+
+    .timeline-item {
+        width: 120%; 
+        height: 90%;
+        padding: 10px; 
+        margin: 10px auto;
+        min-height: auto; 
+    }
+
+    .timeline-title {
+        font-size: 25px; /* Smaller font size */
+    }
+
+    .timeline-subtitle {
+        font-size: 22px; /* Reduce subtitle font size */
+        color: #007bff;
+        font-weight: 700;
+    }
 
 }
