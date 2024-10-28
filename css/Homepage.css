@@ -225,7 +225,7 @@ body {
 
 
 
-    .menu-panel.active {
+    .menu-panel .active {
         right: 0;
 
     }
@@ -421,10 +421,7 @@ body {
     }
 
 
-    .menu-panel {
-        display: none;
-    }
-
+  
 
     footer img{
         cursor: pointer;

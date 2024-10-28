@@ -21,9 +21,6 @@
   
 </head>
 <body>
-
-    
-
     <section class="portfolio-section">
         <div class="container">
             <header class="header">
@@ -446,34 +443,15 @@
         const menuPanel = document.getElementById('menu-panel-id');
         const heroSubtitle = document.querySelector('.hero-subtile');
         const closeBtn = document.getElementById("btn-close");
-        const sectionDivider = document.getElementById("section-divider");
-      
-        
-
 
 
         burger.addEventListener('click', () => {
           menuPanel.classList.toggle('active');
-          console.log(sectionDivider)
-          sectionDivider.style.position = "static"
-          sectionHighligh.style.position = "static"
-          
         });
 
         closeBtn.addEventListener ("click" , () => {
            menuPanel.classList.toggle("active");
-           
-            sectionDivider.style.position = "relative"
-            sectionHighligh.style.position = "absoulte"
-
         });
-
-
-
-
-
-
-
     </script>
     
 </body>
