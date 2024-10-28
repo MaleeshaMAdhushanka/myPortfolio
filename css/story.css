@@ -26,7 +26,7 @@
 .story-divider {
     width: 221px;
     margin: 15px auto;
-    position: relative;
+  
    
 }
 
@@ -36,16 +36,7 @@
     
 }
 
-.story-highlight {
-    position: absolute;
-    top: -4px;
-    left: 0;
-    width: 50px;
-    height: 15px;
-    background-color: #0984e3;
-    border-radius: 50px;
-   
-}
+
 
 .time-line {
     max-width: 800px;
@@ -53,10 +44,11 @@
 }
 
 .timeline-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 60px;
     padding: 20px 0;
+ 
 }
 
 .timeline-item {
@@ -67,9 +59,10 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     min-height: 250px;
-    width: 70%;
+    width: 100%;
     gap: 50px;
     column-gap: 10px;
+    box-sizing: border-box;
 }
 
 .timeline-item:hover {
@@ -88,11 +81,7 @@
     font-weight: 700;
 }
 
-/* Centering timeline items in rows */
-.timeline-row {
-    justify-content: center;
-    align-items: start;
-}
+
 
      /* Mobile Small (up to 320px ) */
 @media screen and (max-width: 320px) {
@@ -118,14 +107,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 80px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+   
 
     .section-title {
         font-size: 24px; /* Reduce font size */
@@ -151,13 +133,9 @@
         padding: 0; /* Remove left padding */
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; /* Ensure items stack vertically */
-        gap: 20px; /* Reduce spacing between items */
-    }
 
     .timeline-item {
-        width: 90%; /* Take full width on small screens */
+        width: 100%; /* Take full width on small screens */
         padding: 10px; /* Reduce padding */
         margin: 10px auto; /* Center the items */
         min-height: auto; /* Allow items to shrink if needed */
@@ -205,14 +183,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 80px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+  
 
     .section-title {
         font-size: 24px; /* Reduce font size */
@@ -238,13 +209,10 @@
         padding: 0; /* Remove left padding */
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; /* Ensure items stack vertically */
-        gap: 20px; /* Reduce spacing between items */
-    }
+  
 
     .timeline-item {
-        width: 90%; /* Take full width on small screens */
+        width: 100%; /* Take full width on small screens */
         padding: 10px; /* Reduce padding */
         margin: 10px auto; /* Center the items */
         min-height: auto; /* Allow items to shrink if needed */
@@ -289,15 +257,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 80px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
-
+  
     .section-title {
         font-size: 24px; /* Reduce font size */
         font-weight: 700;
@@ -324,10 +284,7 @@
         padding: 0; 
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; 
-        gap: 20px; 
-    }
+
 
     .timeline-item {
         width: 100%; 
@@ -355,9 +312,6 @@
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
     .story-section {
-        position: relative;
-        right: 1%;
-        left: 2%;
         margin-top: 50%;
         padding: 10px;
         width: 90%;
@@ -367,7 +321,7 @@
     .story-divider {
         width: 132px;
         margin: 5px auto;
-        position: relative;
+       
     }
 
     .story-line {
@@ -376,14 +330,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 100px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+   
 
     .section-title {
         font-size: 24px; /* Reduce font size */
@@ -411,16 +358,12 @@
         padding: 0; 
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; 
-        gap: 15px; 
-    }
 
     .timeline-item {
-        width: 100%; 
         padding: 10px; 
         margin: 10px auto;
         min-height: auto; 
+        width: 100%;
     }
 
     .timeline-title {
@@ -464,14 +407,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 100px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+    
 
     .section-title {
         font-size: 24px; /* Reduce font size */
@@ -500,13 +436,9 @@
         padding: 0; 
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; 
-        gap: 15px; 
-    }
-
+ 
     .timeline-item {
-        width: 110%; 
+        width: 100%; 
         padding: 10px; 
         margin: 10px auto;
         min-height: auto; 
@@ -554,14 +486,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 100px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+  
 
     .section-title {
         font-size: 28px; /* Reduce font size */
@@ -590,13 +515,9 @@
         padding: 0; 
     }
 
-    .timeline-row {
-        grid-template-columns: 1fr; 
-        gap: 15px; 
-    }
 
     .timeline-item {
-        width: 120%; 
+        width: 100%; 
         height: 90%;
         padding: 10px; 
         margin: 10px auto;
@@ -645,14 +566,7 @@
         background-color: white;
     }
 
-    .story-highlight {
-        top: -5px;
-        left: 0;
-        width: 100px;
-        height: 18px;
-        background-color: #0984e3;
-        border-radius: 50px;
-    }
+   
 
     .section-title {
         font-size: 28px; /* Reduce font size */
@@ -687,7 +601,7 @@
     }
 
     .timeline-item {
-        width: 120%; 
+        width: 100%; 
         height: 90%;
         padding: 10px; 
         margin: 10px auto;

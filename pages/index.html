@@ -27,10 +27,15 @@
     <section class="portfolio-section">
         <div class="container">
             <header class="header">
-                <i class="fa fa-bars burger" id="burger" aria-hidden="true"></i>
-
-
                 <img src="/images/WhatsApp Image 2024-09-11 at 21.09.46.jpeg" alt="MyPortFolio logo" class="logo">
+              <div id="burger" class="burger">
+
+                <i class="fa fa-bars"  aria-hidden="true"></i>
+              </div>
+             
+
+
+
                 <!-- represent the intruductory contentor gorup of navigation link-->
                  
                  <nav class="nav-menu">
@@ -50,6 +55,7 @@
             <div class="menu-panel" id="menu-panel-id">
                 <button class="close-btn" id="btn-close">&times;</button>
 
+                <ul class="nav-link-container">
                 <li><a href="#index.html" class="nav-link">Home</a></li>
                 <li><a href="#about.html" class="nav-link">About</a></li>
                 <li><a href="#skills.html" class="nav-link">What I do</a></li>
@@ -57,12 +63,9 @@
                 <li><a href="#gallery" class="nav-link">Gallery</a></li>
                 <li><a href="#content" class="nav-link">content</a></li>
 
-
+            </ul>
 
             </div>
-
-
-
 
             <main>
                 <section id="index.html" class="hero">
@@ -123,10 +126,10 @@
 
             
             <h2 class="about-sectiontitle">About Me</h2>
-            <div class="section-divider">
+            <div id="section-divider" class="section-divider">
                 
                 <div class="divider-line"></div>
-                <div class="divider-highlight"></div>
+                
 
             </div>
 
@@ -182,9 +185,9 @@
             <h2 class="skills-title">What I do</h2>
 
 
-            <div class="section-divider">
+            <div id="section-divider" class="section-divider">
                 <div class="divider-line"></div>
-                <div class="divider-highlight"></div>
+               
 
 
             </div>
@@ -296,21 +299,21 @@
 
                 <div class="gallery-divider">
                     <div class="divider-line"></div>
-                    <div class="divider-highlight"></div>
+                  
                 </div>
                 
                 <div>
                     <div class="img-Container">
-                        <img src="/images/fi2.jpg"   alt="my specking pic">
+                        <img src="/images/fi2.jpg" class="gallery-img"   alt="my specking pic">
 
                          <h3>"A Collaborative Effort"</h3>
                         
                          <p> "This project aimed at Dog care clinic. I played a key role in our team. Proud to have collaborated with my amazing team at IJSE on this successful project!"</p>
                            
 
-                      <img src="/images/zitha.jpg"  alt="project1 with team">
+                      <img src="/images/zitha.jpg"  class="gallery-img" alt="project1 with team">
                     
-                      <img src="/images/fi.jpg  " alt="earn cetify">
+                      <img src="/images/fi.jpg  " class="gallery-img" alt="earn cetify">
 
 
                     </div>
@@ -443,13 +446,26 @@
         const menuPanel = document.getElementById('menu-panel-id');
         const heroSubtitle = document.querySelector('.hero-subtile');
         const closeBtn = document.getElementById("btn-close");
+        const sectionDivider = document.getElementById("section-divider");
+      
+        
+
+
 
         burger.addEventListener('click', () => {
           menuPanel.classList.toggle('active');
+          console.log(sectionDivider)
+          sectionDivider.style.position = "static"
+          sectionHighligh.style.position = "static"
+          
         });
 
         closeBtn.addEventListener ("click" , () => {
            menuPanel.classList.toggle("active");
+           
+            sectionDivider.style.position = "relative"
+            sectionHighligh.style.position = "absoulte"
+
         });
 
 

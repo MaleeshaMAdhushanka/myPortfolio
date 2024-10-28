@@ -21,8 +21,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-
 }
 .nav-link{
 
@@ -31,9 +29,17 @@ body {
     color: #f5f5f5;
     /* yatin udeline wage wedenawa meka nethanm */
     text-decoration: none;
+   
+}
+
+.nav-link-container{
+   
+    text-decoration: none;
+    z-index: 9999;
 }
 .nav-menu{
     display: flex;
+    align-self: flex-end;
     gap: 28px;
     list-style: none;
 
@@ -45,48 +51,64 @@ body {
 .logo{
     width: 70px;
     height: auto;
-    margin-right: 30%;
     background-color: black;
 }
 .hero{
     display: flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
-    
+    margin-top: 50px;
 }
-.hero-content{
-    width: 59%;
 
-}
+
 .hero-subtile{
     font-size: 25px;
 
 }
 .hero-title{
     font-size: 50px;
-    margin-top: 112px;
 
 }
 .hero-description{
     font-size: 23px;
     font-weight: 700;
-    margin-top: 112px;
 }
 .hero-image{
-    width: 40%;
-    float: right;
-    margin-left: 22px;
-    /* padding-left: 50px; */
+    height: 21rem;
     border-radius: 50%;
     border: 10px solid #f5f5f5;
-    /* align-content: right; */
-    
-    /* background-position: top right ; */
-
-    
-
 }
+
+.menu-panel {
+    background-color: black;
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 50px 20px;
+}
+
+
+.menu-panel ul li {
+    margin-bottom: 20px;
+}
+
+.menu-panel ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+
 
 
 
@@ -107,7 +129,7 @@ body {
 
 
 .burger {
-    display: none;
+    display: block;
     color: white;
     font-size: 2rem;
     cursor: pointer;
@@ -120,6 +142,9 @@ body {
 .menu-panel {
     display: block;
 }
+
+
+
 /* Mobile Small (up to 320px )*/
 
 @media screen and (max-width: 320px) {
@@ -133,47 +158,31 @@ body {
     }
 
     .burger {
-        display: block;
         color: white;
         font-size: 0.9rem;
         cursor: pointer;
-        position: absolute;
-        top: 14px;
-        right: 15px;
+         display: flex;
     }
     .hero-image{
-        width: 60%;
+        width: 100%;
         height: 30%;
       
         margin-left: 7px;
         /* padding-left: 50px; */
         border-radius: 50%;
         border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 70px;
-        right: 60px;
-        /* align-content: right; */
-        
-        /* background-position: top right ; */
-      
     }
 
     .logo {
         width: 40px;
-        position: absolute;
-        top: 16px;
-        left: 10px;
     }
 
     .hero-title {
         font-size: 20px;
-        margin-top: 200px;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 180px;
         font-size: 12px;
         text-align: center;
     }
@@ -202,6 +211,34 @@ body {
         margin-right: 0px;
     }
 
+
+    .menu-panel {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+
+
+    .menu-panel.active {
+        right: 0;
+
+    }
+
+    .close-btn {
+        display: block;
+        color:  blue;
+    }
+
+
+
+
+
   
 
 
@@ -221,26 +258,22 @@ body {
     }
 
     .burger {
-        display: block;
         color: white;
         font-size: 1rem;
         cursor: pointer;
-        position: absolute;
-        top: 14px;
-        right: 18px;
+        display: flex;
+      
     }
 
     .hero-image{
-        width: 60%;
+        
         height: 30%;
-        float: center;
-        margin-left: 7px;
+
+        
         /* padding-left: 50px; */
         border-radius: 50%;
         border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 40px;
-        right: 70px;
+
         /* align-content: right; */
         
         /* background-position: top right ; */
@@ -249,23 +282,17 @@ body {
 
     .logo {
         width: 40px;
-        position: absolute;
-        top: 16px;
-        left: 15px;
     }
 
 
     .hero-title {
         font-size: 24px;
-        margin-top: 250px;
         text-align: center;
         margin-right: 50px;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 230px;
         font-size: 14px;
         text-align: center;
         
@@ -298,10 +325,31 @@ body {
         margin-left: 21px;
     }
 
-
     .menu-panel {
-        display: none;
+        height: 100vh;
+        width: 100vw;
     }
+
+    .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+
+
+    .menu-panel.active {
+        right: 0;
+
+    }
+
+    .close-btn {
+        display: block;
+        color:  blue;
+    }
+
+
+
 
    
 
@@ -323,26 +371,21 @@ body {
     }
 
     .burger {
-        display: block;
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 18px;
+        display: flex;
+       
     }
 
     .hero-image{
-        width: 50%;
+        width: 100%;
         height: 30%;
-        float: center;
         margin-left: 7px;
         /* padding-left: 50px; */
         border-radius: 50%;
         border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 40px;
-        right: 70px;
+
         /* align-content: right; */
         
         /* background-position: top right ; */
@@ -351,9 +394,6 @@ body {
 
     .logo {
         width: 40px;
-        position: absolute;
-        top: 16px;
-        left: 15px;
     }
 
     .hero-title {
@@ -362,17 +402,13 @@ body {
         margin-right: 30%;
         text-align: center; */
         font-size: 30px;
-        margin-top: 200%;
-        margin-left: 30%;
+        text-align: center;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 250px;
-        text-align: center;
         font-size: 21px;
-        margin-left: 30% ;
+        text-align: center;
         
     }
 
@@ -401,6 +437,29 @@ body {
         margin-left: 50px;
     }
 
+    .menu-panel {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+
+
+    .menu-panel.active {
+        right: 0;
+
+    }
+
+    .close-btn {
+        display: block;
+        color:  blue;
+    }
+
 
 
 
@@ -425,37 +484,14 @@ body {
     }
 
     .burger {
-        display: block;
         color: white;
         font-size: 1.5rem;
         cursor: pointer;
-        position: absolute;
-        top: 15px;
-        right: 18px;
-    }
-
-    .hero-image{
-        width: 40%;
-        height: 40%;
-        float: center;
-        margin-left: 7px;
-        /* padding-left: 50px; */
-        border-radius: 50%;
-        border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 140px;
-        right: 60px;
-        /* align-content: right; */
-        
-        /* background-position: top right ; */
-      
+        display: flex;
     }
 
     .logo {
         width: 50px;
-        position: absolute;
-        top: 16px;
-        left: 15px;
     }
 
     .hero-title {
@@ -464,17 +500,13 @@ body {
         margin-right: 30%;
         text-align: center; */
         font-size: 25px;
-        margin-top: 90%;
         margin-left: 10%;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 240px;
-        text-align: center;
         font-size: 23px;
-        margin-right: 100px ;
+        margin-left: 10% ;
         
     }
  
@@ -506,7 +538,26 @@ body {
 
 
     .menu-panel {
-        display: none;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .menu-panel ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+
+
+    .menu-panel.active {
+        right: 0;
+
+    }
+
+    .close-btn {
+        display: block;
+        color:  blue;
     }
 
 
@@ -524,6 +575,10 @@ body {
 
 @media screen and (min-width: 769px)  and (max-width: 1024px) {
 
+    .hero{
+        flex-direction: row;
+    }
+    
     .burger {
         display: none;
     }
@@ -548,28 +603,9 @@ body {
     }
     .logo {
         width: 50px;
-        position: absolute;
-        top: 20px;
-        left: 15px;
     }
 
 
-    .hero-image{
-        width: 30%;
-        height: 44%;
-        
-        margin-left: 40%;
-        /* padding-left: 50px; */
-        border-radius: 50%;
-        border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 20%;
-        right: 10%;
-        /* align-content: right; */
-        
-        /* background-position: top right ; */
-      
-    }
 
     .hero-title {
         /* font-size: 30px;
@@ -577,17 +613,13 @@ body {
         margin-right: 30%;
         text-align: center; */
         font-size: 30px;
-        margin-top: 50%;
         margin-left: 10%;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 200px;
-        text-align: center;
         font-size: 21px;
-        margin-left: 30% ;
+        margin-left: 10% ;
         
     }
 
@@ -639,6 +671,9 @@ body {
 
 @media screen  and (min-width: 1025px) and (max-width: 1440px) {
 
+    .hero{
+        flex-direction: row;
+    }
 
     .burger {
         display: none;
@@ -664,27 +699,10 @@ body {
     }
     .logo {
         width: 50px;
-        position: absolute;
-        top: 20px;
-        left: 15px;
     }
 
 
-    .hero-image{
-        width: 30%;
-        float: center;
-        margin-left: 50%;
-        /* padding-left: 50px; */
-        border-radius: 50%;
-        border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 15%;
-        right: 10%;
-        /* align-content: right; */
-        
-        /* background-position: top right ; */
-      
-    }
+
 
     .hero-title {
         /* font-size: 30px;
@@ -692,14 +710,11 @@ body {
         margin-right: 30%;
         text-align: center; */
         font-size: 30px;
-        margin-top: 20%;
         margin-left: 10%;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 100px;
         text-align: left;
         font-size: 20px;
         margin-left: 10% ;
@@ -710,7 +725,6 @@ body {
     .hero-description {
         font-size: 25px;
         text-align: left;
-        margin-top: 100px;
         margin-left: 65px;
         padding-left: 10px;
 
@@ -754,15 +768,17 @@ body {
 @media screen  and (min-width: 1441px) and (max-width: 2560px) {
 
 
+    .hero{
+        flex-direction: row;
+    }
+
+
     .burger {
         display: none;
     }
 
     .nav-menu{
-        display: flex;
-        justify-content: flex-end;
         gap: 50px;
-        list-style: none;
         margin-top: 1px;
     
     
@@ -779,59 +795,32 @@ body {
     }
     .logo {
         width: 70px;
-        position: absolute;
-        top: 20px;
-        left: 15px;
     }
 
 
-    .hero-image{
-        width: 25%;
-        height: 70%;
-        float: center;
-        margin-left: 60%;
-        /* padding-left: 50px; */
-        border-radius: 50%;
-        border: 10px solid #f5f5f5;
-        position: absolute;
-        top: 15%;
-        right: 10%;
-        /* align-content: right; */
-        
-        /* background-position: top right ; */
-      
-    }
-
+ 
     .hero-title {
         /* font-size: 30px;
         margin-top: 290px;
         margin-right: 30%;
         text-align: center; */
         font-size: 40px;
-        margin-top: 20%;
         margin-left: 10%;
 
     }
 
     .hero-subtile{
-        position: relative;
-        top: 100px;
         text-align: left;
         font-size: 20px;
         margin-left: 10% ;
-        
     }
 
-    .hero-content{
-        width: 70%;
-    
-    }
+
 
 
     .hero-description {
         font-size: 25px;
         text-align: left;
-        margin-top: 100px;
         margin-right: 41%;
 
         padding-left: 80px;

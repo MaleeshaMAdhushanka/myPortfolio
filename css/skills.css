@@ -15,7 +15,7 @@
 .section-divider{
     width: 221px;
     margin: 15px auto;
-    position: relative;
+  
 
 }
 
@@ -24,20 +24,12 @@
     background-color: rgba(154, 150, 150, 0.65);
 }
 
-.divider-highlight {
-    position: absolute;
-    top: -4px;
-    left: 0;
-    width: 50px;
-    height: 15px;
-    background-color: #0984e3;
-    border-radius: 50px;
-  }
+
 
   .skills-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 20px;
     margin-top: 70px;
     width: 100%;
     /* justify-content: center; */
@@ -49,10 +41,7 @@
     border-radius: 25px;
     padding: 10px;
     text-align: center;
-    width: 60%;
-    margin:10%;
     cursor: pointer;
-    position: relative; 
     /* needs for positionting the popup */
     transition: all 0.3s ease;
     
@@ -110,14 +99,7 @@
     background-color: white;
   }
 
-  .divider-highlight {
-    top: -20px;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #0984e3;
-    border-radius: 50px;
-  }
+
 
 
   .skills-title {
@@ -136,13 +118,6 @@
    
   }
 
-  .skills-card {
-
-    width: 110%;
-    padding: 0%;
-    margin-left: 0;
-    margin-right: 100px;
-  }
 
   .skill-desscription {
     font-size: 11px;
@@ -205,13 +180,7 @@
    
   }
 
-  .skills-card {
 
-    width: 120%;
-    padding: 0%;
-    margin-left: 0;
-    margin-right: 100px;
-  }
 
   .skill-desscription {
     font-size: 13px;
@@ -272,14 +241,6 @@
  
 }
 
-.skills-card {
-
-  width: 120%;
-  padding: 0%;
-  margin-left: 0;
-  margin-right: 100px;
-}
-
 .skill-desscription {
   font-size: 15px;
 }
@@ -334,13 +295,7 @@
  
 }
 
-.skills-card {
 
-  width: 90%;
-  padding: 0%;
-  margin-left: 0;
-  margin-right: 100px;
-}
 
 .skill-desscription {
   font-size: 17px;
@@ -400,13 +355,6 @@
  
 }
 
-.skills-card {
-
-  width: 100%;
-  padding: 0%;
-  margin-left: 0;
-  margin-right: 100px;
-}
 
 .skill-desscription {
   font-size: 18px;
@@ -467,13 +415,7 @@
  
 }
 
-.skills-card {
 
-  width: 90%;
-  padding: 0%;
-  margin-left: 0;
-  margin-right: 100px;
-}
 
 .skill-desscription {
   font-size: 20px;
@@ -530,13 +472,6 @@
  
 }
 
-.skills-card {
-
-  width: 80%;
-  padding: 0%;
-  margin-left: 0;
-  margin-right: 100px;
-}
 
 .skill-desscription {
   font-size: 22px;
