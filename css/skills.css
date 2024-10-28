@@ -543,6 +543,8 @@
 }
 
 .skill-icon{
+  position: relative;
+  left: 10px;
   width: 30%;
   height: auto;
   margin-bottom: 30px;
