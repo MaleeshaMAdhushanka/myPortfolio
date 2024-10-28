@@ -54,12 +54,271 @@ form h2 {
     background-color: #0056b3;
 }
 
-@media (max-width: 500px) {
+
+.lets-Contact {
+    text-align: center;
+}
+
+.lets-Contact img {
+    width: 40px;
+    height: 30px;
+}
+
+
+
+
+
+  /* Mobile Small (up to 320px ) */
+  @media screen and (max-width: 320px) {
+
     .contact-form-container {
-        padding: 20px;
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 40%;
+        max-width: 150%;
+        margin-right: 10%;
+        margin-left: 13%;
+    }
+  
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+    
+  }
+
+
+   /* Mobile Medium (up to 375px) */
+
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 50%;
+        max-width: 150%;
+        margin-right: 10%;
+        margin-left: 13%;
+    }
+
+   
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+    
+
+
+}
+
+
+/* Mobile Large (up to 425px) */
+
+@media screen and (min-width: 376px) and (max-width: 425px) { 
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 60%;
+        max-width: 150%;
+        margin-right: 10%;
+        margin-left: 10%;
     }
 
     .send-btn {
-        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
     }
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+    
+
 }
+
+
+/* Tab type divices */
+/* done */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width:70%;
+        max-width: 150%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .send-btn {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 25x;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+
+}
+
+/* Laptop Type Devices */
+
+@media screen and (min-width: 769px)  and (max-width: 1024px) {
+
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width:70%;
+        max-width: 150%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    form h2 {
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+
+    .send-btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 28x;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+
+}
+
+
+/* Laptop Large */ 
+
+@media screen  and (min-width: 1025px) and (max-width: 1440px) {
+
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width:70%;
+        max-width: 180%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    form h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+
+    .send-btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 28x;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+
+}
+
+/* 4k-2560 */
+
+@media screen  and (min-width: 1441px) and (max-width: 2560px) {
+
+
+    .contact-form-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        height: 50%;
+        max-width: 180%;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    form h2 {
+        font-size: 42px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+
+    .send-btn {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 28x;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .send-btn:hover {
+        background-color: black;
+    }
+
+}
+

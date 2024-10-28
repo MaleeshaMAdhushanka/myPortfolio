@@ -241,12 +241,12 @@
     }
 
     .about-image {
-       width: 50%;
-       height: 40%;
+       width: 60%;
+       height: 50%;
        position: absolute;
        display: block;
-       top: 180%;
-       right: 20%;
+       top: 190%;
+       right: 10%;
        transform: translate(-10%, -40%);
     
 
@@ -427,17 +427,19 @@
     }
 
     .about-image {
-       width: 40%;
-       height: 80%;
-       position: absolute;
-       display: block;
-       top: 170%;
-       right: 20%;
-       transform: translate(-20%, -50%);
-    
-
-
-    }
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        display: block;
+        top: 125%;
+        right: 20%;
+        left: 35%;
+        /* transform: translate(-80%, -40%); */
+     
+ 
+ 
+     }
+ 
 
     .about-text{
         width: 95%;
@@ -490,13 +492,14 @@
     }
 
     .about-image {
-       width: 30%;
-       height: 80%;
+       width: 33%;
+       height: 100%;
        position: absolute;
        display: block;
-       top: 170%;
+       top: 150%;
        right: 20%;
-       transform: translate(-50%, -50%);
+       left: 35%;
+       /* transform: translate(-80%, -40%); */
     
 
 
